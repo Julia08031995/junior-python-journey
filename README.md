@@ -1,4 +1,5 @@
-# junior-python-journey
+# REPO_HW_1
+
 Путь джуна в Python
 import pandas as pd
 import matplotlib.pyplot as plt
