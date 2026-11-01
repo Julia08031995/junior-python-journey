@@ -33,8 +33,15 @@ plt.plot(
 plt.title('Средний доход и аренда по странам')
 plt.xlabel('Страна')
 plt.ylabel('Значение')
-plt.legend(0
+plt.legend(0)
 #Удалила параметр круговой диаграмы
+plt.figure(figsize=(15,7))
+ 
+plt.bar(
+    df_group_3['region'],
+    df_group_3['delivery_cost'],
+    color = 'blue'
+)
 plt.grid(True)
 plt.title('Доля городов по диапазону плотности')
 plt.tight_layout()
