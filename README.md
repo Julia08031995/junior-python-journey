@@ -33,20 +33,9 @@ plt.plot(
 plt.title('Средний доход и аренда по странам')
 plt.xlabel('Страна')
 plt.ylabel('Значение')
-plt.legend()
+plt.legend(0
+#Удалила параметр круговой диаграмы
 plt.grid(True)
-
-# График 2: круговая (справа)
-plt.subplot(1, 2, 2)
-
-counts = df['density_range'].value_counts()
-
-plt.pie(
-    counts.values,
-    labels=counts.index,
-    autopct='%1.1f%%',
-    startangle=90
-)
 plt.title('Доля городов по диапазону плотности')
 plt.tight_layout()
 plt.show()
